@@ -1,0 +1,20 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: dewmin
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: dev
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: aws
+
+provider:
+  name: aws
+  runtime: python3.12
+  region: ap-south-1
+  versionFunction: false
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
