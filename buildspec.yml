@@ -12,4 +12,4 @@ phases:
 
   build:
     commands:
-      - sls deploy
+      - serverless deploy
