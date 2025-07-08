@@ -5,6 +5,7 @@ phases:
   install:
     runtime-versions:
       python: 3.12
+      nodejs: 18
     commands:
       - npm install -g serverless
       - pip install -r requirements.txt || true
